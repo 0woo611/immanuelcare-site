@@ -37,6 +37,10 @@ h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:-.03em;font-weight:900}
 .pill.lg{padding:16px 34px;font-size:17px}
 .pill.ghost{background:transparent;border-color:var(--navy);color:var(--navy)}
 .pill.ghost:hover{background:var(--navy);color:#fff}
+.hd .pill{white-space:nowrap;flex:none}
+.pill.kakao{background:#FEE500;border-color:#FEE500;color:#3C1E1E}
+.pill.kakao:hover{background:#F2D900;border-color:#F2D900;color:#3C1E1E}
+.pill.kakao svg{flex:none}
 .mbtn{display:none;margin-left:auto;background:none;border:1px solid var(--line);
   border-radius:8px;padding:9px 12px;font:inherit;color:inherit;cursor:pointer}
 
@@ -174,6 +178,11 @@ h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:-.03em;font-weight:900}
   .g3{grid-template-columns:repeat(2,1fr)}
   .faq-lead{grid-template-columns:1fr}
 }
+/* 헤더 폭이 좁을 때 카카오 버튼은 아이콘만 */
+@media (max-width:1280px){
+  .hd .pill.kakao{padding:0;width:44px;height:44px;justify-content:center}
+  .hd .kakao-txt{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+}
 @media (max-width:1080px){
   .mbtn{display:block}
   .nav{position:absolute;left:0;right:0;top:100%;background:var(--bg);
@@ -182,6 +191,8 @@ h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:-.03em;font-weight:900}
   .nav ul{flex-direction:column;gap:0}
   .nav a{display:block;padding:13px 0;border-bottom:1px solid var(--line)}
   .hd .pill{display:none}
+  .hd .pill.kakao{display:inline-flex;margin-left:auto;order:1}
+  .mbtn{margin-left:0;order:2}
   .sec{padding:60px 0}
   .hero{padding:56px 0 48px}
   .g2,.g3,.g4{grid-template-columns:1fr}
@@ -189,6 +200,10 @@ h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:-.03em;font-weight:900}
   .mbar{display:block}
 }
 @media (max-width:480px){
+  .hd-in{gap:8px}
+  .hd .pill.kakao{width:40px;height:40px}
+  .brand{font-size:18px}
+  .brand img{width:34px}
   .quickcard ul{grid-template-columns:repeat(2,1fr)}
   .badge-tit{padding:10px 24px}
 }
