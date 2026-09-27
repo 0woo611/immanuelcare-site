@@ -31,9 +31,9 @@ h1,h2,h3,h4{margin:0;line-height:1.35;letter-spacing:-.03em;font-weight:900}
 .nav a{font-size:15px;font-weight:500;padding:8px 0;border-bottom:2px solid transparent;
   white-space:nowrap}
 .nav a:hover,.nav a.on{color:var(--teal);border-bottom-color:var(--teal)}
-.pill{display:inline-flex;align-items:center;gap:7px;background:var(--gold);color:#22190A;
-  border:2px solid var(--gold);border-radius:999px;padding:11px 22px;font-weight:900;font-size:15px}
-.pill:hover{background:var(--navy);border-color:var(--navy);color:#fff}
+.pill{display:inline-flex;align-items:center;gap:7px;background:var(--teal);color:#fff;
+  border:2px solid var(--teal);border-radius:999px;padding:11px 22px;font-weight:900;font-size:15px}
+.pill:hover{background:var(--teal-deep);border-color:var(--teal-deep);color:#fff}
 .pill.lg{padding:16px 34px;font-size:17px}
 .pill.ghost{background:transparent;border-color:var(--navy);color:var(--navy)}
 .pill.ghost:hover{background:var(--navy);color:#fff}
